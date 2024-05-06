@@ -12,7 +12,7 @@ from dash.exceptions import PreventUpdate
 from unicodedata import lookup
 from dash.dash_table.Format import Format, Group
 
-master_file = '/Users/alexfil/Documents/Reports/Cost reports data/DWCC/dwcc_master_git_model.xlsx'
+master_file = 'https://github.com/Filichkin/Interactive_Dasboard_Plotly_Dash/blob/main/data/dwcc_master_git_model.xlsx'
 
 jan_dcc = pd.read_excel(master_file, sheet_name='jan')
 feb_dcc = pd.read_excel(master_file, sheet_name='feb')
