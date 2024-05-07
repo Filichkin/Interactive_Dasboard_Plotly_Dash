@@ -46,7 +46,7 @@ indicator_columns = ['m2_cost', 'parts_cost', 'total_cost', 'dm2pu', 'dcpu', 'cp
 indicator_columns_other = ['uio', 'm2_qty', 'claim_qty', 'novs', 'courtesy_car', 'sws', 'sws_ratio', 'trp_2']
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.FONT_AWESOME, dbc.icons.BOOTSTRAP])
-
+server = app.server
 app.layout = html.Div([
     dbc.Col([
         html.Br(),
