@@ -861,5 +861,5 @@ def display_bar(dealer, indicator_kpi, indicator_other):
     return fig1, fig2, fig3
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
 
