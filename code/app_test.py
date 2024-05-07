@@ -12,13 +12,13 @@ from dash.exceptions import PreventUpdate
 from unicodedata import lookup
 from dash.dash_table.Format import Format, Group
 
-master_file = 'https://github.com/Filichkin/Interactive_Dasboard_Plotly_Dash/blob/main/data/dwcc_master_git_model.xlsx'
+master_file = '../data/dwcc_master_git_model.xlsx'
 
-jan_dcc = pd.read_excel(master_file, sheet_name='jan', engine='openpyxl')
-feb_dcc = pd.read_excel(master_file, sheet_name='feb', engine='openpyxl')
-mar_dcc = pd.read_excel(master_file, sheet_name='mar', engine='openpyxl')
-apr_dcc = pd.read_excel(master_file, sheet_name='apr', engine='openpyxl')
-sub_dcc = pd.read_excel(master_file, sheet_name='total', engine='openpyxl')
+jan_dcc = pd.read_excel(master_file, sheet_name='jan')
+feb_dcc = pd.read_excel(master_file, sheet_name='feb')
+mar_dcc = pd.read_excel(master_file, sheet_name='mar')
+apr_dcc = pd.read_excel(master_file, sheet_name='apr')
+sub_dcc = pd.read_excel(master_file, sheet_name='total')
 
 month_list = [jan_dcc, feb_dcc, mar_dcc, apr_dcc, sub_dcc]
 dash_tab = pd.concat(month_list).reset_index(drop=True)
