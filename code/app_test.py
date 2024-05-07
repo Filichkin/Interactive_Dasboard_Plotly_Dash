@@ -516,5 +516,5 @@ def display_bar(dealer, indicator_kpi, indicator_other):
               prevent_initial_call=True)
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+  app.run_server(debug=False)
 
