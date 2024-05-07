@@ -514,6 +514,9 @@ def display_bar(dealer, indicator_kpi, indicator_other):
 @app.callback(Output('download-dataframe-xlsx', 'data'),
               Input('btn_xlsx', 'n_clicks'),
               prevent_initial_call=True)
+def func(n_clicks):
+    return dcc.send_data_frame(dash_tab.to_excel, 'mydf.xlsx', sheet_name="Sheet_name_1")
+
 if __name__ == '__main__':
     app.run_server(debug=False)
 
