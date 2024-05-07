@@ -514,7 +514,6 @@ def display_bar(dealer, indicator_kpi, indicator_other):
 @app.callback(Output('download-dataframe-xlsx', 'data'),
               Input('btn_xlsx', 'n_clicks'),
               prevent_initial_call=True)
-
 if __name__ == '__main__':
-  app.run_server(debug=False)
+    app.run_server(debug=False)
 
