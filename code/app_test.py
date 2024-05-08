@@ -230,7 +230,7 @@ def plot_dealers_by_points(year, month, active_tab):
                    'padding': '15px'},
         columnSize="sizeToFit",
         className='ag-theme-custom-theme',
-        style={"height": 110, "width": 1400}
+        style={"height": 110, "width": 'auto'}
 
         )
 
